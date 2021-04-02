@@ -1,0 +1,44 @@
+.root {
+    -fx-background-color: rgb(50, 50, 50);
+}
+
+TextField {;
+    -fx-background-color: black;
+    -fx-text-fill: white;
+}
+
+Label {
+    -fx-text-fill: white;
+}
+
+Button {
+    -fx-background-color: rgb(100, 100, 200);
+    -fx-text-fill: white;
+}
+
+.slider .track {
+    -fx-background-color: black;
+}
+
+.slider .thumb {
+    -fx-background-color: rgb(100, 100, 200);
+}
+
+.combo-box {
+    -fx-background-color: transparent;
+    -fx-background: black;
+    -fx-text-fill: white;
+}
+
+.combo-box .list-cell {
+    -fx-background-color: black;
+    -fx-text-fill: white;
+}
+
+.combo-box .arrow-button {
+    -fx-background-color: black;
+}
+
+.combo-box .arrow {
+    -fx-background-color: white;
+}

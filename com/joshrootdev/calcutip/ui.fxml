@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.geometry.Insets?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.joshrootdev.calcutip.Controller" prefWidth="250">
+    <center>
+        <VBox spacing="20" prefWidth="150">
+            <padding>
+                <Insets top="25" right="25" bottom="25" left="25" />
+            </padding>
+            <children>
+                <TextField fx:id="mealCost" prefWidth="200" promptText="Meal Cost" />
+                <ComboBox fx:id="percentageSelect" prefWidth="250" promptText="Tip Amount (Percentage)" />
+                <VBox spacing="5" prefWidth="300">
+                    <children>
+                        <Slider fx:id="peopleSlider" min="1" max="100" prefWidth="200" />
+                        <Label fx:id="splitLabel" text="Split Between 1 Individual(s)" prefWidth="200" textAlignment="CENTER" alignment="CENTER" />
+                    </children>
+                </VBox>
+                <Button text="Calculate Total Cost" onAction="#calculateClicked" prefWidth="200" />
+                <GridPane prefWidth="150" prefHeight="100" alignment="center" hgap="5" vgap="5">
+                    <Label fx:id="mealPriceTextLbl" GridPane.columnIndex="0" GridPane.rowIndex="0" text="Meal Price:" />
+                    <Label fx:id="mealPriceText" GridPane.columnIndex="1" GridPane.rowIndex="0" text="" />
+
+                    <Label fx:id="tipTextLbl" GridPane.columnIndex="0" GridPane.rowIndex="1" text="Tip Amount:" />
+                    <Label fx:id="tipText" GridPane.columnIndex="1" GridPane.rowIndex="1" text="" />
+
+                    <Label fx:id="totalTextLbl" GridPane.columnIndex="0" GridPane.rowIndex="2" text="Total:" />
+                    <Label fx:id="totalText" GridPane.columnIndex="1" GridPane.rowIndex="2" text="" />
+
+                    <Label fx:id="cppTextLbl" GridPane.columnIndex="0" GridPane.rowIndex="3" text="Cost Per Person:" />
+                    <Label fx:id="cppText" GridPane.columnIndex="1" GridPane.rowIndex="3" text="" />
+                </GridPane>
+            </children>
+        </VBox>
+    </center>
+</BorderPane>
